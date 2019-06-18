@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>컵라면의 제조 공정</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700" rel="stylesheet">
+    <meta charset="utf-8">
+    <%= stylesheet_link_tag "style" %>
+</head>
+
+<body>
+    <div id="navigation">
+        <div class="nav-item" id="index">
+            <%= image_tag("noodles.svg", id:'navbar-icon') %>
+            <%= link_to gallery_main_url do%>
+            대한민국 컵라면 인덱스
+            <%end%>
+        </div>
+        <div id="navigation-right">
+            <div class="nav-item">  
+                <%= link_to information_history_path do%>
+                    컵라면의 역사
+                <%end%>
+            </div>
+            <div class="nav-item">
+                <%= link_to information_processpage_path do%>
+                    컵라면의 제조 과정
+                <%end%>
+            </div>
+        </div>
+    </div>
+    <h2>컵라면의 제조 공정</h2>
+    <p>시판되는 컵라면은 다음과 같은 절차를 통해서 만들어진다.</p>
+        <ol>
+            <li>(액상)스프 볶음 및 포장</li>
+            <li>면 반죽 및 제면</li>
+            <li>면 절출(자르기)</li>
+            <li>면 절단</li>
+            <li>튀김공정 전 납형</li>
+            <li>면 냉각</li>
+            <li>용기 충진</li>
+            <li>스프 투입(기계화된 공정으로 자동 투입)</li>
+            <li>뚜껑 접착</li>
+            <li>포장하여 판매, 소비자에게 전달</li>
+        </ol>
+    <p>
+        참고한 자료: <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zsJvHqheTdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <div class="about">
+        본 웹페이지는 2019-1학기 웹프로그래밍개론 과제를 위해 만들어졌습니다.
+    </div>
+</body>
+
+</html>

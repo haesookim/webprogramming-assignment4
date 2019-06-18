@@ -1,0 +1,486 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#navbar-icon{
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+    padding-bottom:4px;
+}
+
+.nav-item a{
+    margin:5px;
+    text-decoration: none;
+    font-weight:300;
+    color: black;
+}
+
+#navigation-right{
+    width: fit-content;
+    display: flex;
+    margin-right: 20px;
+}
+
+#navigation a{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+#index{
+    margin-left: 40px;
+}
+
+.header,
+.content{
+    margin :20px 0;
+    padding: 20px 50px;
+}
+
+.header h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.header{
+    background-color: lightcoral;
+}
+
+p, ol, ul{
+    background-color:white;
+    margin: 50px 100px ;
+}
+
+#main-icon{
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+    padding-bottom: 9px;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 50px;
+    background-color: lightblue;
+}
+
+
+.about{
+    padding: 50px;
+    margin-bottom: 0px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+}
+
+/*within the catalogue*/
+
+.catalogue{
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    padding-bottom: 50px;
+    h2{
+        text-align: center;
+        margin: 0 auto;
+        padding: 30px auto 10px;
+        width: fit-content;
+        font-size: 40px;
+        background-color: lightgoldenrodyellow;
+        border-bottom: 1px solid grey;
+    }
+    #catalogue-text{
+        margin: 30px;
+    }
+    #catalogue-items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.ramen-box{
+    width: 400px;
+    height:fit-content;
+    margin: 20px;
+    align-content: center;
+    &.dark{
+        color: white;
+    }
+    &.light{
+        color: black;
+    }
+    p{
+        text-align: center;
+        margin: 20px 40px 30px 40px;
+        background-color: transparent;
+    }
+    .ramen-name{
+        font-size: 23px;
+        font-weight:700;
+        margin-top: 10px;
+    }
+    .ramen-drawing{
+        width: 150px;
+        height: 150px;
+        margin: 15px auto;
+        margin-bottom: 0px;
+        justify-content: center;
+        position: relative;
+    }
+    .base-circle, .body, .lid{
+        position: absolute;
+        margin: 0 auto;
+    }
+    .base-circle{
+        width: 80px;
+        height:40px;
+        border-radius: 100%;
+        background-color: white;
+        left: 35px;
+        bottom: 10px;
+    }
+    .body{
+        border-top: 80px solid white;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        width: 80px;
+        height: 0;
+        top: 42px;
+        position: relative;
+        .shine{
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            transform: skew(10deg);
+            bottom: -5px;
+        }
+        .shadow{
+            width: 110px;
+            height: 80px;
+            border-radius: 100%;
+            position: relative;
+            bottom: 105px;
+            right: 15px;
+            background-color: rgba(70, 70, 70, 0.384);
+        }
+    }
+    .lid{
+        width: 120px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: blue;
+        left: 15px;
+        top: 7px;
+        .lid-text{
+            color: white;
+            font-weight: 900;
+            font-size: 25px;
+            position: relative;
+            top: 15px;
+            left: 3px;
+            transform: rotateX(-40deg);
+        }
+        .lid-bowl{
+            position: absolute;
+            border-radius: 100%;
+        }
+        .lid-ramen{
+            position: absolute;
+            border-radius: 100%;
+        }
+    }
+    .lid-circle{
+        position: absolute;
+        border-radius: 100%;
+    }
+}
+
+/* 
+ * 신라면 아트 
+ */
+
+#shin{
+    background-color: rgb(177, 53, 53);
+}
+
+#shin-draw {
+    .base-circle{
+    background-color: black;
+    }
+    .body{
+        border-top: 80px solid black;
+        .top-band{
+            position: absolute;
+            border-top: 70px solid darkred;
+            border-left: 17px solid transparent;
+            border-right: 17px solid transparent;
+            width: 86px;
+            height: 0;
+            bottom: 10px;
+            left: -20px;
+        }
+        .top-band-circle{
+            position: absolute;
+            background-color: darkred;
+            width: 88px;
+            height: 40px;
+            border-radius: 100%;
+            bottom: -5px;
+            left: -4px;
+        }
+        .shadow{
+            background-color: rgba(82, 3, 3, 0.384);
+        } 
+    }
+    .lid{
+        background-color: red;
+        .lid-black{
+            position: absolute;
+            top:40px;
+            width: 120px;
+            height: 40px;
+            border-top: solid 1px yellow;
+            background-color: rgb(34, 34, 34);
+            border-bottom-left-radius:100% 200%;
+            border-bottom-right-radius:100% 200%;
+        }
+        .lid-bowl{
+            position: relative;
+            width: 70px;
+            height: 40px;
+            background-color: black;
+            left: 40px;
+            top: 30px;
+        }
+        .lid-ramen{
+            width: 60px;
+            height: 30px;
+            background-color: rgb(255, 102, 0);
+            left: 45px;
+            bottom: 16px;
+        }    
+        .lid-text{
+            color: black;
+            -webkit-text-stroke: 1px white;
+            font-size: 50px;
+            top: -50px;
+            left: -30px;
+        }    
+    }
+}
+
+/*
+ * 짜파게티 아트
+ */
+
+#jappa{
+    background-color: rgb(164, 167, 139);
+}
+
+#jappa-draw {
+    .base-circle{
+        background-color: rgb(199, 199, 146);
+    }
+    .body{
+        border-top: 80px solid rgb(199, 199, 146);
+        .triangle-shape{
+            position: absolute;
+            border-top: 80px solid olive;
+            border-left: 20px solid transparent;
+            border-right: 40px solid transparent;
+            width: 0px;
+            height: 0;
+            top: -72px;
+            left: -18px;
+        }
+        .band{
+            background-color: red;
+            width: 20px;
+            height: 50px;
+            position: absolute;
+            transform: skew(-10deg);
+            bottom: 5px;
+            left: 50px;
+        }
+    }
+    .lid{
+        background-color: olive;
+        .lid-color{
+            position: absolute;
+            top:40px;
+            width: 120px;
+            height: 40px;
+            border-top: solid 1px olive;
+            background-color: rgb(199, 199, 146);
+            border-bottom-left-radius:100% 200%;
+            border-bottom-right-radius:100% 200%;
+        }
+        .lid-bowl{
+            position: relative;
+            width: 70px;
+            height: 40px;
+            background-color: rgb(255, 245, 200);
+            left: 40px;
+            top: 37px;
+        }
+        .lid-ramen{
+            width: 50px;
+            height: 30px;
+            background-color: rgb(114, 58, 21);
+            left: 55px;
+            bottom: 6px;
+        }
+        .lid-text{
+            color: white;
+            -webkit-text-stroke: 0.5px rgb(56, 27, 8);
+            font-size: 25px;
+            top: -25px;
+            left: -5px;
+        }
+    }
+}
+
+#samyang{
+    background-color: rgb(231, 143, 102);
+}
+
+#samyang-draw .base-circle{
+    background-color: rgb(250, 116, 62);
+}
+
+#samyang-draw .body{
+    border-top: 80px solid rgb(250, 116, 62);
+}
+
+#samyang-draw .lid{
+    background-color: rgb(250, 116, 62);
+}
+
+#samyang-draw .lid-text{
+    color: blue;
+    font-size: 28px;
+    -webkit-text-stroke: 0.7px white;
+    transform: rotateX(-40deg) rotateY(10deg);
+    top: 15px;
+    left: -2px;
+}
+
+#samyang-draw .lid-circle{
+    width: 100px;
+    height: 60px;
+    border: 1px solid yellow;
+    background-color: transparent;
+    left: 10px;
+    top: 7px;
+}
+
+#samyang-draw .lid-ramen{
+    background-color: rgb(255, 245, 200);
+    width: 70px;
+    height: 40px;
+    left: 25px;
+    top: 15px;
+}
+
+/* 불닭볶음면 */
+
+#buldak{
+    background-color: rgb(34, 34, 34);
+}
+
+#buldak-draw .base-circle, #buldak-draw .lid{
+    background-color: black;
+}
+
+#buldak-draw .body{
+    border-top: 80px solid black;
+}
+
+#buldak-draw .lid-bowl{
+    top: 15px;
+    background-color: gray;
+    width: 90px;
+    height: 60px;
+    left: 2px;
+}
+#buldak-draw .lid-ramen{
+    background-color: rgb(252, 91, 16);
+    width: 80px;
+    height: 50px;
+    top: 20px;
+    left: 5px;
+}
+
+#buldak-draw .lid-text{
+    color: red;
+    top: 15px;
+    left: 3px;
+    font-size: 22px;
+    -webkit-text-stroke: 1px white;
+}
+
+#dongwonchamci{
+    background-color: rgb(248, 217, 131);
+}
+
+#dongwonchamci .base-circle{
+    background-color: rgb(255, 187, 0);
+}
+
+#dongwonchamci .body{
+    border-top: 80px solid rgb(255, 187, 0);
+}
+
+#dongwonchamci .lid{
+    background-color: rgb(255, 187, 0);
+}
+
+#dongwonchamci #outer{
+    border: 3px solid white;
+    background-color: red;
+    width: 100px;
+    height: 60px;
+    left: 7px;
+    top: 7px;
+}
+
+#dongwonchamci #inner{
+    background-color: rgb(255, 187, 0);
+    width: 85px;
+    height: 50px;
+    left: 18px;
+    top: 15px;
+}
+
+#dongwonchamci .lid-text{
+    color: blue;
+    left: 2px;
+}
+
+#jongga{
+    background-color: rgb(165, 252, 106);
+}
+
+#carbo{
+    background-color: rgb(250, 177, 207);
+}
+
+#yukgae{
+    background-color: rgb(137, 164, 255);
+}
+
+#gimchisabal{
+    background-color: rgb(253, 93, 45);
+}

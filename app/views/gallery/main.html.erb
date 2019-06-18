@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>대한민국 컵라면 인덱스</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900" rel="stylesheet">
+    <meta charset="utf-8">
+    <%= stylesheet_link_tag "style" %>
+</head>
+
+<body>
+    <div id="navigation">
+        <div class="nav-item" id="index">
+            <%= image_tag("noodles.svg", id:'navbar-icon') %>
+            <%= link_to gallery_main_url do%>
+            대한민국 컵라면 인덱스
+            <%end%>
+        </div>
+        <div id="navigation-right">
+            <div class="nav-item">  
+                <%= link_to information_history_path do%>
+                    컵라면의 역사
+                <%end%>
+            </div>
+            <div class="nav-item">
+                <%= link_to information_processpage_path do%>
+                    컵라면의 제조 과정
+                <%end%>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>즉석식품의 끝판왕 </br>
+            <span style="color: #311d23; font-size: 70px; line-height: 75px; vertical-align: middle">
+                <%= image_tag("noodles.svg", id:'main-icon') %> 대한민국 컵라면 인덱스
+            </span>
+        </h1>
+    </div>
+    <p id="introduction">시간이 없어 편의점에서 급하게 밥을 때우다 보면 늘 마주치게 되는 것이 <strong>컵라면</strong>이다. 사람이 어쩔 수 없는 관성이 있어 늘 먹던 걸 사먹게 된다지만,
+            <em>이 나라에
+                컵라면이 정말이지 이렇게나 많은데</em> 한 가지만 먹기는 또 아까워지기 마련이다. 그래서 한 번 다양하게 먹어보면 어떨까라는 생각을 했다. 각각의 맛이 어떤지, 어떤
+            느낌인지 정리를
+            해 보았다. 매운 걸 못 먹기 때문에 얼마나 매운지도 정리해 보았다. 매운 걸 못 먹는다는 사실을 알면서도 고통받는 일이 이제는 좀 덜해지길.</p>
+    <div class="catalogue">
+        <h2>Catalogue</h2>
+        <div id="catalogue-text">각 라면은 맵기를 기준으로 평가되어 있으며, 기타 추가하고자 하는 다른 코멘트도 달아 두었다. </br>
+            각각의 첨부된 그림들은 CSS로 그려져 있다. CSS 표현력의 한계로 인해 그림이 다소 간소화되었다.</div>
+        <div id="catalogue-items">
+            <div class="ramen-box dark" id="shin">
+                <div class="ramen-drawing" id="shin-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="top-band"></div>
+                        <div class="top-band-circle"></div>
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-black"></div>
+                        <div class="lid-bowl"></div>
+                        <div class="lid-ramen"></div>
+                        <div class="lid-text"><em>辛</em></div>
+                    </div>
+                </div>
+                <h3 class="ramen-name">농심 신라면</h3>
+                <p>
+                    맵기: ★★★★☆</br>
+                    한국적 매운맛의 원조! </br>질리지 않는 클래식한 라면의 맛.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="jappa">
+                <div class="ramen-drawing" id="jappa-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="triangle-shape"></div>
+                        <div class="band"></div>
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-color"></div>
+                        <div class="lid-bowl"></div>
+                        <div class="lid-ramen"></div>
+                        <div class="lid-text"><em>짜파게티</em></div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">농심 짜파게티</h3>
+                <p>
+                    맵기: ★☆☆☆☆</br>
+                    짜장면도, 스파게티도 아닌 것이 </br>맛이 묘하다. 독보적인 맛.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="samyang">
+                <div class="ramen-drawing" id="samyang-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-ramen"></div>
+                        <div class="lid-circle"></div>
+                        <div class="lid-text"><em>三養라면</em></div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">삼양라면</h3>
+                <p> 맵기: ★★★☆☆</br>
+                    라면의 원조 '바로 그' 맛. </br>삼양라면 특유의 감칠맛이 강한 인상을 남긴다.
+                </p>
+            </div>
+
+            <div class="ramen-box dark" id="buldak">
+                <div class="ramen-drawing" id="buldak-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                            <div class="lid-bowl"></div>
+                            <div class="lid-ramen"></div>
+                        <div class="lid-text">불닭볶음면</div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">불닭볶음면</h3>
+                <p> 맵기: ★★★★★★</br>
+                    '코리안 스파이시 누들'의 진가.</br> 맵고 맵고 또 맵다. 너무 맵다..
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="dongwonchamci">
+                <div class="ramen-drawing" id="chamci-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-circle" id="outer"></div>
+                        <div class="lid-circle" id="inner"></div>
+                        <div class="lid-text">동원참치</div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">동원참치라면</h3>
+                <p> 맵기: ★★★★☆</br>
+                    참치 비슷한.. 게 들어가 있다.</br> 세븐일레븐에서만 판다.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="jongga">
+                <div class="ramen-drawing" id="jongga-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-text"><em>辛</em></div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">종가집 김치찌개 라면</h3>
+                <p> 맵기: ★★★☆☆</br>
+                    라면에 김치보다는 김치찌개에 라면.</br> 별미라 맛있다. CU 전용.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="carbo">
+                <div class="ramen-drawing" id="carbo-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-text"><em>辛</em></div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">까르보불닭</h3>
+                <p> 맵기: ★★★★★</br>
+                    안 매울 것 같이 생겨서는...</br> 불닭은 불닭이다.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="yukgae">
+                <div class="ramen-drawing" id="yukgae-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-text"><em>辛</em></div>
+                    </div>
+                </div>
+
+                <h3 class="ramen-name">육개장 사발면</h3>
+                <p> 맵기: ★★★☆☆</br>
+                    과하지 않은 양과 쫄깃한 면발!</br>항상 돌아오는 고정픽.
+                </p>
+            </div>
+
+            <div class="ramen-box light" id="gimchisabal">
+                <div class="ramen-drawing" id="gimchi-draw">
+                    <div class="base-circle"></div>
+                    <div class="body">
+                        <div class="shine"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="lid">
+                        <div class="lid-text"><em>辛</em></div>
+                    </div>
+                </div>
+                <h3 class="ramen-name">김치사발면</h3>
+                <p> 맵기: ★★★☆☆</br>
+                    육개장과 비슷하지만 김치 맛.</br> 사실 김치스프는 별로다..
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="about">
+        본 웹페이지는 2019-1학기 웹프로그래밍개론 과제를 위해 만들어졌습니다.
+    </div>
+
+</body>
+
+</html>
